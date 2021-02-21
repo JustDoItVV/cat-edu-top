@@ -1,0 +1,51 @@
+:root {
+  --background: #f5f6f8;
+  --grey: #a4a4a4;
+  --grey-light: #ebebeb;
+  --grey-dark: #6c7077;
+  --black: #3b434e;
+  --white: white;
+  --primary: #7351f5;
+  --primary-hover: #4a27d7;
+  --red: #fc836d;
+  --green: #007b48;
+  --green-light: #c8f8e4;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --font-family: "Noto Sans", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--white);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f5f6f8;
+    --black: #3b434e;
+    --grey: #a4a4a4;
+    --grey-light: #ebebeb;
+    --grey-dark: #6c7077;
+    --white: white;
+    --primary: #7351f5;
+    --primary-hover: #4a27d7;
+    --red: #fc836d;
+    --green: #007b48;
+    --green-light: #c8f8e4;
+    --shadow: rgba(0, 0, 0, 0.05);
+    --font-family: "Noto Sans", sans-serif;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--black);
+  font-family: var(--font-family);
+}
+
+.visuallyHidden {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
