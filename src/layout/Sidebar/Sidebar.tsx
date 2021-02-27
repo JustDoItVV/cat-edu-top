@@ -12,7 +12,7 @@ export function Sidebar(props: SidebarProps): JSX.Element {
       className={styles.sidebar}
       {...props}
     >
-      <Icon icon='logo' className={styles.logo} /> TOP
+      <Icon icon='logoCat' className={styles.logo} /> TOP
       <Search />
       <Menu />
     </div>
