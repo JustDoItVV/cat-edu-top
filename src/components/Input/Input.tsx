@@ -9,7 +9,7 @@ interface InputProps extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 }
 
 export const Input = forwardRef(
-  function Input({ className, error, ...props }: InputProps, ref:ForwardedRef<HTMLInputElement>): JSX.Element {
+  function Input({ className, error, ...props }: InputProps, ref:ForwardedRef<HTMLInputElement>): React.JSX.Element {
     return (
       <div className={cn(styles.inputWrapper, className)}>
         <input className={cn(styles.input, {

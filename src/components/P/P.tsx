@@ -7,7 +7,7 @@ interface PProps extends DetailedHTMLProps<HTMLAttributes<HTMLParagraphElement>,
   size?: 's' | 'm' | 'l';
 }
 
-export function P({ size = 'm', className, children, ...props }: PProps): JSX.Element {
+export function P({ size = 'm', className, children, ...props }: PProps): React.JSX.Element {
   return (
     <p
       className={cn(styles.p, className, {

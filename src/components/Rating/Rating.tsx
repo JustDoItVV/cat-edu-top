@@ -16,8 +16,8 @@ interface RatingProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, 
 }
 
 export const Rating = forwardRef(
-  function Rating({ rating, setRating, isEditable = false, error, tabIndex, ...props }: RatingProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element {
-    const [ratings, setRatings] = useState<JSX.Element[]>(new Array(5).fill(<></>));
+  function Rating({ rating, setRating, isEditable = false, error, tabIndex, ...props }: RatingProps, ref: ForwardedRef<HTMLDivElement>): React.JSX.Element {
+    const [ratings, setRatings] = useState<React.JSX.Element[]>(new Array(5).fill(<></>));
     const ratingArrayRef = useRef<(SVGSVGElement | null)[]>([]);
 
     useEffect(() => {

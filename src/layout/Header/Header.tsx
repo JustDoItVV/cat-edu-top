@@ -9,7 +9,7 @@ import styles from './Header.module.css';
 
 type HeaderProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
-export function Header({ className, ...props }: HeaderProps): JSX.Element {
+export function Header({ className, ...props }: HeaderProps): React.JSX.Element {
   const [isOpened, setIsOpened] = useState(false);
   const router = useRouter();
 

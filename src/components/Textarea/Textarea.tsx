@@ -9,7 +9,7 @@ interface TextareaProps extends DetailedHTMLProps<TextareaHTMLAttributes<HTMLTex
 }
 
 export const Textarea = forwardRef(
-  function Textarea({ className, error, ...props }: TextareaProps, ref: ForwardedRef<HTMLTextAreaElement>): JSX.Element {
+  function Textarea({ className, error, ...props }: TextareaProps, ref: ForwardedRef<HTMLTextAreaElement>): React.JSX.Element {
     return (
       <div className={cn(styles.textareaWrapper, className)}>
         <textarea className={cn(styles.textarea, {

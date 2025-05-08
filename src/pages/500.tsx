@@ -1,7 +1,7 @@
 import { HTag } from '../components';
 import withLayout from '../layout/Layout';
 
-export default withLayout(function error500(): JSX.Element {
+export default withLayout(function error500(): React.JSX.Element {
 
   return (
     <>

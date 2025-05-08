@@ -16,7 +16,7 @@ export function Tag({
   href,
   children,
   ...props
-}: TagProps): JSX.Element {
+}: TagProps): React.JSX.Element {
   return (
     <div
       className={cn(styles.tag, className, {

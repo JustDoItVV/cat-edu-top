@@ -6,7 +6,7 @@ interface AdvantagesProps {
   advantages: PageAdvantage[];
 }
 
-export function Advantages({ advantages }: AdvantagesProps): JSX.Element {
+export function Advantages({ advantages }: AdvantagesProps): React.JSX.Element {
   return (
     <>
       {advantages.map((advantage) => (

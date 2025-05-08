@@ -41,7 +41,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export default withLayout(function Type({ firstCategory }: TypeProps): JSX.Element {
+export default withLayout(function Type({ firstCategory }: TypeProps): React.JSX.Element {
   return (
     <>
       Type: {firstCategory}

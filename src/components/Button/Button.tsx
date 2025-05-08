@@ -15,7 +15,7 @@ export function Button({
   children, 
   className, 
   ...props
-}: ButtonProps): JSX.Element {
+}: ButtonProps): React.JSX.Element {
   return (
     <button
       className={cn(styles.button, className, {

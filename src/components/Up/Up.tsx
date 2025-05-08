@@ -5,7 +5,7 @@ import { useScrollY } from '../../hooks';
 import { ButtonIcon } from '../ButtonIcon/ButtonIcon';
 import styles from './Up.module.css';
 
-export function Up(): JSX.Element {
+export function Up(): React.JSX.Element {
   const controls = useAnimation();
   const y = useScrollY();
 

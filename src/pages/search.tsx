@@ -33,7 +33,7 @@ export const getStaticProps: GetStaticProps<SearchProps> = async ({ params }: Ge
   }
 };
 
-export default withLayout(function Search(): JSX.Element {
+export default withLayout(function Search(): React.JSX.Element {
   return (
     <>
       Search

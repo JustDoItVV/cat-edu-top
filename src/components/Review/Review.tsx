@@ -11,7 +11,7 @@ import styles from './Review.module.css';
 interface ReviewProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   review: TReview;}
 
-export function Review({ review, className, ...props }: ReviewProps): JSX.Element {
+export function Review({ review, className, ...props }: ReviewProps): React.JSX.Element {
   const { name, title, description, createdAt, rating } = review;
 
   return (

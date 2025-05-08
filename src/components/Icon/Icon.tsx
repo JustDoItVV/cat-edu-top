@@ -17,7 +17,7 @@ export const Icon = forwardRef(
     stroke = "currentColor",
     className = "size-6",
     ...props
-  }: IconProps, ref: ForwardedRef<SVGSVGElement>): JSX.Element {
+  }: IconProps, ref: ForwardedRef<SVGSVGElement>): React.JSX.Element {
     return (
       <svg xmlns={xmlns} fill={fill} viewBox={viewBox} strokeWidth={strokeWidth} stroke={stroke} className={className} ref={ref} {...props}>
         {icons[icon as string]}

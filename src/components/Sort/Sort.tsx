@@ -10,7 +10,7 @@ interface SortProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HT
   setSort: (sort: SortOptions) => void;
 }
 
-export function Sort({ sort, setSort, className, ...props }: SortProps): JSX.Element {
+export function Sort({ sort, setSort, className, ...props }: SortProps): React.JSX.Element {
   return (
     <div
       className={cn(styles.sort, className)}

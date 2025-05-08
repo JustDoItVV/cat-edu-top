@@ -10,7 +10,7 @@ import { AppContext } from '../../context/app.context';
 import { FirstLevelMenuItem, PageItem } from '../../types';
 import styles from './Menu.module.css';
 
-export function Menu(): JSX.Element {
+export function Menu(): React.JSX.Element {
   const { menu, setMenu, firstCategory } = useContext(AppContext);
   const [announce, setAnnounce] = useState<'closed' | 'opened' | undefined>();
   const shouldReduceMotion = useReducedMotion();

@@ -1,5 +1,7 @@
 import cn from 'classnames';
-import { FunctionComponent, KeyboardEvent, ReactNode, useRef, useState } from 'react';
+import {
+    FunctionComponent, KeyboardEvent, PropsWithChildren, ReactNode, useRef, useState
+} from 'react';
 
 import { Up } from '../components';
 import { AppContextProvider, IAppContext } from '../context/app.context';
@@ -8,11 +10,9 @@ import { Header } from './Header/Header';
 import styles from './Layout.module.css';
 import { Sidebar } from './Sidebar/Sidebar';
 
-export interface LayoutProps {
-  children: ReactNode;
-}
+export interface LayoutProps extends PropsWithChildren {}
 
-function Layout({ children }: LayoutProps): JSX.Element {
+function Layout({ children }: LayoutProps): React.JSX.Element {
   const [isSkipLinkDisplayed, setIsSkipLinkDisplayed] = useState(false);
   const bodyRef = useRef<HTMLDivElement>(null);
 
@@ -46,7 +46,7 @@ function Layout({ children }: LayoutProps): JSX.Element {
 }
 
 export default function withLayout<T extends Record<string, unknown> & IAppContext>(Component: FunctionComponent<T>) {
-  return function withLayoutComponent(props: T): JSX.Element {
+  return function withLayoutComponent(props: T): React.JSX.Element {
     return (
       <AppContextProvider menu={props.menu} firstCategory={props.firstCategory}>
         <Layout>

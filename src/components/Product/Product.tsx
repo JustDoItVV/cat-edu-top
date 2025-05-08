@@ -17,7 +17,7 @@ interface ProductProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
   product: TProduct;
 }
 
-export function Product({ product, className, ...props }: ProductProps): JSX.Element {
+export function Product({ product, className, ...props }: ProductProps): React.JSX.Element {
   const [isReviewOpened, setIsReviewOpened] = useState(false);
   const reviewRef = useRef<HTMLDivElement>(null);
 

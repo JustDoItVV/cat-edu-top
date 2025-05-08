@@ -6,7 +6,7 @@ import styles from './Sidebar.module.css';
 
 type SidebarProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
-export function Sidebar(props: SidebarProps): JSX.Element {
+export function Sidebar(props: SidebarProps): React.JSX.Element {
   return (
     <div
       className={styles.sidebar}

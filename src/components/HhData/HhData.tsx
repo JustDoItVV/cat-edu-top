@@ -6,7 +6,7 @@ import styles from './HhData.module.css';
 
 interface HhDataProps extends HhDataType {}
 
-export function HhData({ count, juniorSalary, middleSalary, seniorSalary }: HhDataProps): JSX.Element {
+export function HhData({ count, juniorSalary, middleSalary, seniorSalary }: HhDataProps): React.JSX.Element {
   return (
     <div className={styles.hh}>
       <Card className={styles.count}>

@@ -17,7 +17,7 @@ interface ReviewFormProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElemen
   isOpened: boolean;
 }
 
-export function ReviewForm({ productId, isOpened, className, ...props }: ReviewFormProps): JSX.Element {
+export function ReviewForm({ productId, isOpened, className, ...props }: ReviewFormProps): React.JSX.Element {
   const { register, control, handleSubmit, formState: { errors }, reset, clearErrors } = useForm<IReviewForm>();
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string>('');

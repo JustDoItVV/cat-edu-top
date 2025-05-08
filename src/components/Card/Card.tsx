@@ -14,7 +14,7 @@ interface CardProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HT
 }
 
 export const Card = forwardRef(
-  function Card({ cardColor = 'white', className, children, ...props }: CardProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element {
+  function Card({ cardColor = 'white', className, children, ...props }: CardProps, ref: ForwardedRef<HTMLDivElement>): React.JSX.Element {
     return (
       <motion.div>
         <div
