@@ -4,10 +4,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { KeyboardEvent, useContext, useState } from 'react';
 
-import { Icon } from '../../components';
-import { firstLevelMenu } from '../../const';
-import { AppContext } from '../../context/app.context';
-import { FirstLevelMenuItem, PageItem } from '../../types';
+import { Icon } from '@/components';
+import { firstLevelMenu } from '@/const';
+import { AppContext } from '@/context/app.context';
+import { FirstLevelMenuItem, PageItem } from '@/types';
+
 import styles from './Menu.module.css';
 
 export function Menu(): React.JSX.Element {
@@ -121,16 +122,13 @@ export function Menu(): React.JSX.Element {
       >
         <Link
             href={`/${route}/${page.alias}`}
-        >
-          <a
             className={cn(styles.thirdLevel, {
               [styles.thirdLevelActive]: `/${route}/${page.alias}` === router.asPath,
             })}
             tabIndex={isOpened ? 0 : -1}
             aria-current={`/${route}/${page.alias}` === router.asPath ? 'page' : false}
-          >
-            {page.category}          
-          </a>
+        >
+          {page.category}          
         </Link>
       </motion.li>
     ));

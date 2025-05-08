@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import { ForwardedRef, forwardRef, useEffect, useReducer } from 'react';
 
-import { Advantages, HhData, HTag, Product, Sort, Tag } from '../../components';
-import { Page, PageCategory, Product as TProduct, SortOptions } from '../../types';
+import { Advantages, HhData, HTag, Product, Sort, Tag } from '@/components';
+import { Page, PageCategory, Product as TProduct, SortOptions } from '@/types';
+
 import styles from './ProductComponent.module.css';
 import { sortReducer } from './sort.reducer';
 

@@ -1,4 +1,5 @@
-import { PageAdvantage } from '../../types';
+import { PageAdvantage } from '@/types';
+
 import { Icon } from '../Icon/Icon';
 import styles from './Advantages.module.css';
 

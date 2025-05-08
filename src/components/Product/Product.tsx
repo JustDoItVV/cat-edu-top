@@ -2,8 +2,9 @@ import cn from 'classnames';
 import Image from 'next/image';
 import { DetailedHTMLProps, HTMLAttributes, useRef, useState } from 'react';
 
-import { Product as TProduct } from '../../types';
-import { declOfNum, priceRu } from '../../utils';
+import { Product as TProduct } from '@/types';
+import { declOfNum, priceRu } from '@/utils';
+
 import { Button } from '../Button/Button';
 import { Card } from '../Card/Card';
 import { Divider } from '../Divider/Divider';

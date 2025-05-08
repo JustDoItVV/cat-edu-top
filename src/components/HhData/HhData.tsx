@@ -1,5 +1,6 @@
-import { HhData as HhDataType } from '../../types';
-import { priceRu } from '../../utils';
+import { HhData as HhDataType } from '@/types';
+import { priceRu } from '@/utils';
+
 import { Card } from '../Card/Card';
 import { Icon } from '../Icon/Icon';
 import styles from './HhData.module.css';

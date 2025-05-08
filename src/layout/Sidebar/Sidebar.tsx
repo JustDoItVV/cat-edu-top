@@ -1,6 +1,7 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
-import { Icon, Search } from '../../components';
+import { Icon, Search } from '@/components';
+
 import { Menu } from '../Menu/Menu';
 import styles from './Sidebar.module.css';
 

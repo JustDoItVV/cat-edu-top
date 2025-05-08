@@ -1,4 +1,4 @@
-import { FirstLevelMenuItem, PageCategory } from '../types';
+import { FirstLevelMenuItem, PageCategory } from '@/types';
 
 export const firstLevelMenu: FirstLevelMenuItem[] = [
   { route: 'courses', name: 'Курсы', icon: 'hat', id: PageCategory.Courses },

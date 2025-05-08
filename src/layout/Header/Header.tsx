@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { DetailedHTMLProps, HTMLAttributes, useEffect, useState } from 'react';
 
-import { ButtonIcon, Icon } from '../../components';
+import { ButtonIcon, Icon } from '@/components';
+
 import { Sidebar } from '../Sidebar/Sidebar';
 import styles from './Header.module.css';
 
@@ -33,7 +34,7 @@ export function Header({ className, ...props }: HeaderProps): React.JSX.Element 
 
   return (
     <header className={cn(styles.header, className)} {...props}>
-      <Icon icon='logoCat' />
+      <Icon icon='logoCat' width={32} />
       <ButtonIcon appearance='white' icon='menu' onClick={() => setIsOpened(true)} />
       <motion.div
         className={styles.mobileMenu}

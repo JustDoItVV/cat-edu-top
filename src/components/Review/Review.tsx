@@ -3,7 +3,8 @@ import { format } from 'date-fns';
 import { ru } from 'date-fns/locale';
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
-import { Review as TReview } from '../../types';
+import { Review as TReview } from '@/types';
+
 import { Icon } from '../Icon/Icon';
 import { Rating } from '../Rating/Rating';
 import styles from './Review.module.css';

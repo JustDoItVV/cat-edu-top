@@ -3,7 +3,8 @@ import cn from 'classnames';
 import { DetailedHTMLProps, HTMLAttributes, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 
-import { Api } from '../../utils';
+import { Api } from '@/utils';
+
 import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
 import { Input } from '../Input/Input';
@@ -44,14 +45,14 @@ export function ReviewForm({ productId, isOpened, className, ...props }: ReviewF
         {...props}
       >
         <Input
-          ref={() => register('name', { required: { value: true, message: 'Обязательное поле' } })}
+          {...register('name', { required: 'Обязательное поле' })}
           placeholder='Имя'
           error={errors.name}
           tabIndex={isOpened ? 0 : -1}
           aria-invalid={!!errors.name}
         />
         <Input
-          ref={() => register('title', { required: { value: true, message: 'Обязательное поле' } })}
+          {...register('title', { required: 'Обязательное поле' })}
           placeholder='Заголовок отзыва'
           className={styles.title}
           error={errors.title}
@@ -63,7 +64,7 @@ export function ReviewForm({ productId, isOpened, className, ...props }: ReviewF
           <Controller
             control={control}
             name='rating'
-            render={(field) => (
+            render={({ field }) => (
               <Rating
                 ref={field.ref}
                 rating={field.value}
@@ -73,11 +74,11 @@ export function ReviewForm({ productId, isOpened, className, ...props }: ReviewF
                 tabIndex={isOpened ? 0 : -1}
               />
             )}
-            rules={{ required: { value: true, message: 'Обязательное поле' } }}
+            rules={{ required: 'Обязательное поле' }}
           />
         </div>
         <Textarea
-          ref={() => register('description', { required: { value: true, message: 'Обязательное поле' } })}
+          {...register('description', { required: 'Обязательное поле' })}
           placeholder='Текст отзыва'
           className={styles.description}
           error={errors.description}

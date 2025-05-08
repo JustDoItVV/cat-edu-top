@@ -1,7 +1,8 @@
 import cn from 'classnames';
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
-import { SortOptions } from '../../types';
+import { SortOptions } from '@/types';
+
 import { Icon } from '../Icon/Icon';
 import styles from './Sort.module.css';
 

@@ -1,7 +1,7 @@
 import { ForwardedRef, forwardRef, SVGProps } from 'react';
 
-import { icons } from '../../const';
-import { IconName } from '../../types';
+import { icons } from '@/const';
+import { IconName } from '@/types';
 
 interface IconProps extends SVGProps<SVGSVGElement> {
   icon: IconName;  

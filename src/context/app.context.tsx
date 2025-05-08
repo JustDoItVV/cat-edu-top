@@ -1,6 +1,6 @@
 import { createContext, PropsWithChildren, ReactNode, useState } from 'react';
 
-import { MenuItem, PageCategory } from '../types';
+import { MenuItem, PageCategory } from '@/types';
 
 export interface IAppContext extends PropsWithChildren {
   menu: MenuItem[];

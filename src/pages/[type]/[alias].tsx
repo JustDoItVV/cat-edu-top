@@ -1,12 +1,13 @@
 import axios from 'axios';
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
-import { ParsedUrlQuery } from 'querystring';
+import { ParsedUrlQuery } from 'node:querystring';
 
-import { firstLevelMenu } from '../../const';
-import withLayout from '../../layout/Layout';
-import { ProductComponent } from '../../page-components';
-import { MenuItem, Page, PageCategory, Product } from '../../types';
+import { firstLevelMenu } from '@/const';
+import withLayout from '@/layout/Layout';
+import { ProductComponent } from '@/page-components';
+import { MenuItem, Page, PageCategory, Product } from '@/types';
+
 import Error404 from '../404';
 
 interface ProductProps extends Record<string, unknown> {
